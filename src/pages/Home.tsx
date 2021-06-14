@@ -1,4 +1,4 @@
-import { IonAvatar, IonContent, IonHeader, IonItem, IonItemOption, IonItemOptions, IonItemSliding, IonLabel, IonList, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonButton, IonContent, IonHeader, IonItem, IonItemOption, IonItemOptions, IonItemSliding, IonLabel, IonList, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
 
 const listArr = [
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        Ionic looks pretty cool!
+        <IonButton color="primary">Hello camarade</IonButton>
         <IonList>
           {
             Array(4).fill(1).map((_, i) => (
@@ -47,6 +47,7 @@ const Home: React.FC = () => {
                     <h2>{element.name}</h2>
                     <h4>{element.desc}</h4>
                     <p>Some helper text!</p>
+                    <IonButton color="primary">Voir</IonButton>
                   </IonLabel>
                 </IonItem>
                 <IonItemOptions side="start">
