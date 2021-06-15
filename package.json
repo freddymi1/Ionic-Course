@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^3.0.1",
     "@capacitor/app": "1.0.1",
-    "@capacitor/core": "3.0.1",
+    "@capacitor/core": "^3.0.1",
     "@capacitor/haptics": "1.0.1",
     "@capacitor/keyboard": "1.0.1",
     "@capacitor/status-bar": "1.0.1",
@@ -65,7 +66,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.0.1"
+    "@capacitor/cli": "^3.0.1"
   },
   "description": "An Ionic project"
 }

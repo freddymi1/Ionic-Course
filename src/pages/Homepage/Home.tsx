@@ -1,4 +1,4 @@
-import { IonAvatar, IonButton, 
+import { IonAvatar, IonButton, IonButtons, 
   IonCard, 
   IonCardContent, 
   IonCardHeader, 
@@ -9,10 +9,10 @@ import { IonAvatar, IonButton,
   IonItemOptions, IonItemSliding, 
   IonLabel, IonList, 
   IonPage, IonText, 
-  IonTitle, IonToolbar 
+  IonTitle, IonToolbar, IonMenu, IonSplitPane, IonMenuButton
 } from '@ionic/react';
 import './Home.css';
-import {star} from 'ionicons/icons'
+import {star, list} from 'ionicons/icons'
 import { useEffect, useState } from 'react';
 
 const listArr = [
@@ -38,14 +38,14 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Dashboard</IonTitle>
-        </IonToolbar>
+          <IonToolbar color="primary">
+            <IonButtons slot="start">
+              <IonMenuButton menu="main-menu"></IonMenuButton>
+            </IonButtons>
+            <IonTitle>Homepage</IonTitle>
+          </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <IonButton color="secondary" routerLink="/aboutme" >About me</IonButton>
-        <IonButton color="tertiary" routerLink="/login" >Log In</IonButton>
-        <IonButton color="danger" routerLink="/register" >Register</IonButton>
         <IonCard>
           <IonCardHeader>
             <IonTitle>

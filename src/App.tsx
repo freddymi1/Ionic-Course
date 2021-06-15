@@ -21,19 +21,27 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+
 import Aboutme from './pages/About/Aboutme';
 import LoginPage from './pages/Loginpage/LoginPage';
 import { Register } from './pages/Register/Register';
+import { MainMenu } from './pages/Menu/MainMenu';
 
+import { IonSplitPane } from '@ionic/react';
+import { PhotMain } from './pages/PhotoMain/PhotoMain';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/aboutme" component={Aboutme}/>
-        <Route exact path="/login" component={LoginPage}/>
-        <Route exact path="/register" component={Register}/>
-      </IonRouterOutlet>
+      <IonSplitPane contentId="menu">
+        <MainMenu/>
+        <IonRouterOutlet id="menu">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/aboutme" component={Aboutme}/>
+          <Route exact path="/photomain" component={PhotMain}/>
+          <Route exact path="/login" component={LoginPage}/>
+          <Route exact path="/register" component={Register}/>
+        </IonRouterOutlet>
+      </IonSplitPane>
     </IonReactRouter>
   </IonApp>
 );
