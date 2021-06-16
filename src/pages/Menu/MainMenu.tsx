@@ -7,9 +7,9 @@ import {
     IonItem,
     IonList,
     IonIcon,
-    IonLabel
+    IonLabel,
 } from "@ionic/react"
-import { camera, document, home, mail } from "ionicons/icons";
+import { cog, document, home } from "ionicons/icons";
 import React from 'react';
 export const MainMenu: React.FC = () => {
     
@@ -30,9 +30,9 @@ export const MainMenu: React.FC = () => {
                         <IonIcon icon={document} slot="start"></IonIcon>
                         <IonLabel>About</IonLabel>  
                     </IonItem> 
-                    <IonItem routerLink="/photomain">
-                        <IonIcon icon={camera} slot="start"></IonIcon>
-                        <IonLabel>Photo</IonLabel>  
+                    <IonItem routerLink="/experience">
+                        <IonIcon icon={cog} slot="start"></IonIcon>
+                        <IonLabel>Experience</IonLabel>  
                     </IonItem>  
                 </IonList>
             </IonContent>

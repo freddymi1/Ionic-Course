@@ -11,12 +11,9 @@ import { IonHeader,
     IonItem,
     IonText
 } from "@ionic/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const Aboutme: React.FC = () => {
     const [input, setInput] = useState('')
-    useEffect(()=>{
-        console.log(input)
-    })
     return(
         <IonPage>
             <IonHeader>

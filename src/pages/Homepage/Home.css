@@ -1,0 +1,114 @@
+.sectionProfile{
+    display: flex;
+}
+.myProfile{
+    width: 25%;
+    min-width: 25%;
+}
+.myProfile .myImage{
+    width: 100%;
+    min-width: 100%;
+    border-radius: 100%;
+}
+.sectionName{
+    padding: 15px;
+    
+}
+.nameLasname{
+    display: flex;
+    background: none !important;
+}
+.myName{
+    font-weight: 900;
+    padding: 5px 0;
+    color: rgb(250, 250, 250);
+    font-size: 1.5rem;
+    margin: 0;
+}
+.myContact{
+    font-weight: 900;
+    padding: 5px 0;
+    color: rgb(250, 250, 250);
+    font-size: 1.2rem;
+    margin: 0;
+}
+.myPost{
+    font-weight: 900;
+    padding: 0;
+    color: rgb(250, 250, 250);
+    font-size: 1rem;
+    margin: 15px 0;
+}
+.myPost .myPostdev{
+    font-weight: 900;
+    padding: 0;
+    color: rgb(233, 233, 233);
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+.sectionContact{
+    display: flex;
+}
+.iconPhone, .iconEmail, .iconIn, .iconGi{
+    color: rgb(1, 177, 247);
+    font-size: 2rem;
+}
+.contact, .email, .in{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(165, 165, 165);
+}
+.phoneContact, .phoneMail{
+    padding: 10px;
+    text-align: center;
+}
+.sectionHeadprofile{
+    display: flex;
+    padding: 15px 5px;
+    background-image: linear-gradient(to right top, #23b0fb, #00bbfe, #00c5ff, #00cfff, #0dd9ff, #21dafe, #2ddcfc, #37ddfb, #38d7f7, #39d1f3, #3bcbef, #3dc5eb);    border-radius: 15px;
+}
+ion-col {
+    text-align: center;
+}
+ion-card{
+    padding: 0;
+}
+@media screen and (max-width:500px) {
+    .myProfile{
+        width: 30%;
+        min-width: 30%;
+    }
+    .sectionName{
+        padding: 0 15px;
+        
+    }
+    .nameLasname{
+        display: block;
+    }
+    .myName{
+        font-weight: 900;
+        padding: 5px 0;
+        color: rgb(250, 250, 250);
+        font-size: 0.8rem;
+    }
+    .myContact{
+        font-weight: 900;
+        padding: 5px 0;
+        color: rgb(250, 250, 250);
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .myPost{
+        font-weight: 900;
+        padding: 0;
+        color: rgb(250, 250, 250);
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .sectionHeadprofile{
+        display: flex;
+        padding: 15px 5px;
+        background-image: linear-gradient(to right top, #23b0fb, #00bbfe, #00c5ff, #00cfff, #0dd9ff, #21dafe, #2ddcfc, #37ddfb, #38d7f7, #39d1f3, #3bcbef, #3dc5eb);    border-radius: 15px;
+    }
+}
